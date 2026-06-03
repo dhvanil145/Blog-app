@@ -9,7 +9,7 @@ import { Button } from "../ui/button"
 
 
 const Nav = () => {
-      const [activeVariable, setActiveVariable] = useState("hero");
+      const [activeVariable, setActiveVariable] = useState("");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
