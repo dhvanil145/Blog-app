@@ -1,20 +1,18 @@
 "use client";
 
-import About from "@/components/ui/About";
-import Footer from "@/components/ui/Footer";
-import Hero from "@/components/ui/Hero";
-import InfoPage from "@/components/ui/InfoPage";
+import About from "@/components/section/About";
+import Hero from "@/components/section/Hero";
+import InfoPage from "@/components/section/InfoPage";
+import Services from "@/components/section/Services";
 
-import Nav from "@/components/ui/Nav";
-import Services from "@/components/ui/Services";
-import { useEffect, useState } from "react";
+
 
 const Home = () => {
 
   return (
     <>
       
-      <main className="mt-16 max-w-7xl mx-auto">
+      <main >
         <Hero />
         <InfoPage />
         <Services />

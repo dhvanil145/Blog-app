@@ -14,19 +14,15 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useRouter } from "next/navigation";
 
-const Login = () => {
+const Register = () => {
   const router = useRouter();
   return (
     <div className="">
       <Card className="max-w-sm mx-auto mt-32">
         <CardHeader>
-          <CardTitle>Login page</CardTitle>
-          <CardDescription>Enter your credential for login</CardDescription>
-          <CardAction>
-            <Button onClick={() => router.push("/register")} variant={"link"}>
-              Register
-            </Button>
-          </CardAction>
+          <CardTitle>Register page</CardTitle>
+          <CardDescription>Enter your credential for register your account</CardDescription>
+          
         </CardHeader>
 
         <CardContent>
@@ -50,15 +46,24 @@ const Login = () => {
                   required
                 />
               </div>
+              <div>
+                <Label htmlFor="confirm-password">Confirm Password</Label>
+                <Input
+                  id="confirm-password"
+                  type="password"
+                  placeholder="*******"
+                  required
+                />
+              </div>
             </div>
           </form>
         </CardContent>
         <CardFooter>
-          <Button>Login</Button>
+          <Button>Register</Button>
         </CardFooter>
       </Card>
     </div>
   );
 };
 
-export default Login;
+export default Register;

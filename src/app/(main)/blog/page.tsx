@@ -13,6 +13,7 @@ type PostResponse = {
 };
 
 const Blog = async () => {
+  new Promise((resolve) => setTimeout((resolve),3000))
   const response = await fetch("https://dummyjson.com/posts");
   const data: PostResponse = await response.json();
   return (
